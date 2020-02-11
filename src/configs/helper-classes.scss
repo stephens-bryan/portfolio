@@ -1,0 +1,15 @@
+// HELPER CLASSES
+%outline {
+    outline: 1px solid $black;
+}
+
+/* Accessible way to hide content, as outlined by webaim; https://webaim.org/techniques/css/invisiblecontent/*/
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
