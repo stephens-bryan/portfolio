@@ -11,19 +11,22 @@
 
 import React, { Fragment } from 'react';
 
-import Header from './components/Header';
-import IntroHero from './components/IntroHero';
-import Overlay from './components/Overlay';
-import Main from './components/Main';
-import Footer from './components/Footer';
+
+import TopBorder from './components/TopBorder/index';
+import Header from './components/Header/index';
+import IntroHero from './components/IntroHero/index';
+import Overlay from './components/Overlay/index';
+import Main from './components/Main/index';
+import Footer from './components/Footer/index';
 
 import './configs/config-styles.scss';
+import './App.scss';
 
 const App = () => {
     
     return(
         <div>
-            <hr />
+            <TopBorder />
             <Header />
             <IntroHero />
             <Overlay />
