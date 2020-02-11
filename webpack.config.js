@@ -35,7 +35,22 @@ const config = ( env, argv ) => {
                 },
                 {
                     test: /\.scss$/,
-                    loaders: [ 'style-loader', 'css-loader', 'sass-loader' ]
+                    loaders: [ 
+                        'style-loader', 
+                        {
+                            loader: 'css-loader', 
+                            options: {
+                                sourceMap: true
+                            }
+                        },
+                        {
+                            loader: 'sass-loader', 
+                            options: {
+                                sourceMap: true
+                            }
+                        }
+                        ],
+                    
                 }
             ]
     
