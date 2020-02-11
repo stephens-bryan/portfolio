@@ -1,0 +1,85 @@
+/***
+1.)  Import Google Fonts
+1.2) Define Header Font-Family
+2.)  Define Site Colours
+3.)  Global Stylings
+4.)  Helper Classes
+*/
+
+
+// IMPORT GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Ubuntu:300&display=swap');
+// HEADING FONT FAMILY
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+// COLOURS
+$black: #000;
+$white: #fff;
+$dark-purple: #280638;
+$purple: #8521B2;
+$light-grey: rgb(117, 117, 117);
+$footer-grey: #252527;
+$box-shadow: rgba(0, 0, 0, 0.5);
+
+// GLOBAL STYLINGS
+body {
+    font-family: 'Ubuntu', sans-serif;
+    /* max-width: 980px; */
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+@media only screen and (max-width: 750px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1em;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.max-width {
+    max-width: 90%;
+    margin: auto;
+}
+
+// HELPER CLASSES
+%outline {
+    outline: 1px solid $black;
+}
+
+/* Accessible way to hide content, as outlined by webaim; https://webaim.org/techniques/css/invisiblecontent/*/
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
