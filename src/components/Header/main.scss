@@ -1,0 +1,44 @@
+@import '../../configs/colours.scss';
+
+/* HEADER  */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    h2{
+        color: $light-grey;
+    }
+    
+    /* * NAV * */
+
+    nav{
+        align-self: center;
+
+        ul{
+            padding: 0;
+            list-style: none;
+
+            li{
+                display: inline;
+                padding: 0 20px;
+
+                a{
+                    text-decoration: none;
+                    color: #8521B2; 
+
+                    &:hover{
+                        color: $dark-purple;
+                    }
+                }
+
+                &:nth-child(2){
+                    a{
+                        color: $light-grey;
+                    }
+                }
+            }
+        }
+
+    }
+}
