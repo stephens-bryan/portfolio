@@ -14,7 +14,7 @@ const IntroHero = () => {
 
     }, []);
 
-    const jumpToNextSection = () => (
+    const jumpLink = () => (
         window.scrollTo({
             top: window.innerHeight + 100,
             behaviour: "smooth"
@@ -31,7 +31,7 @@ const IntroHero = () => {
                 <a href="mailto:contact@bryanstephens.ca"> contact@bryanstphens.ca</a>
             </p>
             <div>
-                 <svg onClick={jumpToNextSection} className="bounce clickable" width="33" height="30" xmlns="http://www.w3.org/2000/svg">
+                 <svg onClick={jumpLink} className="bounce clickable" width="33" height="30" xmlns="http://www.w3.org/2000/svg">
                         <polygon points="0.645,10.383 16,23.871 31.355,10.383 29.375,8.129 16,19.878 2.625,8.129 ">
                         </polygon>
                     </svg>
