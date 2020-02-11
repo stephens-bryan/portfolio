@@ -1,0 +1,15 @@
+@import '../../configs/colours.scss';
+@import '../../configs/helper-classes.scss';
+
+/* TOP LINE */
+
+.top {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-color: $purple;
+    margin: 0;
+    border: 0;
+    display: block;
+    right: 0;
+}
