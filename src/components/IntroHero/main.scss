@@ -1,0 +1,59 @@
+@import '../../configs/colours.scss';
+
+/* SECTION - INTRO  */
+
+.intro {
+    div {
+        p {
+            margin: 0;
+            font-size: 1.5em;
+            line-height: 2em;
+
+            &:nth-child(1) {
+                font-size: 1.8em;
+                line-height: 1.8em;
+                margin: 0;
+                padding-top: 12rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: $purple;
+            }
+        }
+    }
+}
+
+.intro_hero__title {
+    position: relative;
+    bottom: 3em;
+}
+
+/* MORE INFO SVG */
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-.8rem);
+    }
+
+    60% {
+        transform: translateY(-.4rem);
+    }
+}
