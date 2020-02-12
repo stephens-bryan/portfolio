@@ -1,0 +1,85 @@
+@import '../../configs/colours.scss';
+/* SECTION - OVERLAP */
+
+.overlay-container {
+    display: flex;
+    margin-bottom: 225px !important;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.overlay-inner-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.overlay-container-heading {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+.img-overlap {
+    height: 100%;
+    width: 800px;
+    box-shadow: 5px 5px 5px $box-shadow;
+    margin-left: auto;
+}
+
+.text-overlay {
+    height: 315px;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    top: 0px;
+    transform: translate(-143px, 270px);
+    width: 750px;
+    background: $white;
+    padding: 2em;
+    background: $purple;
+    color: $white;
+
+    p{
+        font-size: 1.3em;
+        line-height: 2em;
+    }
+
+    a {
+        color: $white;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+    
+    &.services {
+        height: calc(100% - 10em);
+    }
+}
+
+.overlay-container-jump-link {
+    transform: translateY(160px);
+}
+
+@media (max-width: 1540px) {
+
+    .overlay-container {
+        margin-bottom: 0 !important;
+    }
+
+    .img-overlap {
+        width: 100%;
+        box-shadow: none;
+        object-fit: cover;
+        height: 580px;
+        object-position: top;
+    }
+
+    .text-overlay {
+        position: relative;
+        transform: initial;
+        width: auto;
+        height: fit-content;
+    }
+}
