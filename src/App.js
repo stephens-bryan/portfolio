@@ -9,7 +9,7 @@
  * 6.) Footer
  */
 
-import React, { Fragment } from 'react';
+import React from 'react';
 
 
 import TopBorder from './components/TopBorder/index';
@@ -22,6 +22,9 @@ import Footer from './components/Footer/index';
 import './configs/config-styles.scss';
 import './App.scss';
 
+import About from './services/about';
+import Service from './services/services';
+
 const App = () => {
     
     return(
@@ -29,9 +32,9 @@ const App = () => {
             <TopBorder />
             <Header />
             <IntroHero />
-            <Overlay />
+            <Overlay props={About} />
             <Main />
-            <Overlay />
+            <Overlay props={Service} />
             <Footer />
         </div>        
     );
