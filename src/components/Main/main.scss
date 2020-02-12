@@ -1,0 +1,106 @@
+/* MAIN */
+
+.main-parent-container {
+    margin-bottom: 2em;
+}
+
+#main div.in-view {
+    opacity: 0;
+    line-height: 1.5;
+    animation: fadeIn 2s ease both;
+    margin: 1em 0;
+    height: 330px;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -70%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.hexagon-container {
+    opacity: 0;
+    margin: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hexagon-container-heading {
+    flex: 100%;
+    font-size: 30px;
+    /* margin-bottom: 1em; */
+}
+
+.hexagon-container-preamble {
+    flex: 100%;
+}
+
+.hexagon {
+    width: 150px;
+    height: 85px;
+    background: #8521B2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 5em 2em;
+    text-align: center;
+}
+
+.hexagon .hexagon-helper-text {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(70px);
+    z-index: 1000;
+    color: #E8C3F4;
+    font-weight: bold;
+}
+
+.hexagon img {
+    height: 70px;
+}
+
+.hexagon:before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 40px solid #8521B2;
+}
+
+.hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 40px solid #8521B2;
+}
+
+.hexagon-scroll-down {
+    text-align: center;
+    /* margin-bottom: 5em; */
+}
+
+@media (max-width: 750px) {
+    #main div.in-view {
+        height: auto;
+    }
+}
