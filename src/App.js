@@ -24,6 +24,7 @@ import './App.scss';
 
 import About from './services/about';
 import Service from './services/services';
+import MainService from './services/main';
 
 const App = () => {
     
@@ -33,7 +34,7 @@ const App = () => {
             <Header />
             <IntroHero />
             <Overlay props={About} />
-            <Main />
+            <Main props={MainService} />
             <Overlay props={Service} />
             <Footer />
         </div>        
