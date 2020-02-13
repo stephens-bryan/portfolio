@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "build": "webpack --mode=production",
-    "start": "webpack-dev-server --mode=development"
+    "start": "webpack-dev-server --mode=development",
+    "serve": "node server.js"
   },
   "keywords": [
     "portfolio",
@@ -34,6 +35,7 @@
     "axios": "^0.19.1",
     "json-server": "^0.15.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-html-parser": "^2.0.2"
   }
 }
