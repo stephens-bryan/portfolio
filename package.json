@@ -5,7 +5,6 @@
   "main": "server.js",
   "scripts": {
     "build": "webpack --mode=production",
-    "start": "webpack-dev-server --mode=development",
     "serve": "node server.js"
   },
   "keywords": [
