@@ -2,10 +2,10 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Portfolio site",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "build": "webpack --mode=production",
-    "serve": "node server.js"
+    "serve": "node index.js"
   },
   "keywords": [
     "portfolio",
