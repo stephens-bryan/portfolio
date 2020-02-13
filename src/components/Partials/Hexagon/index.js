@@ -1,15 +1,15 @@
 import React from 'react'
 
-const Hexagon = ({imgSrc, imgTitle, imgAlt, helperText}) => {
+const Hexagon = ({hexagon}) => {
     return(
         <div className="hexagon">
             <img
-                src={imgSrc}
-                title={imgTitle}
-                alt={imgAlt}
+                src={hexagon.imgSrc}
+                title={hexagon.imgTitle}
+                alt={hexagon.imgAlt}
             />
             <small className="hexagon-helper-text">
-                {helperText}
+                {hexagon.helperText}
             </small>
         </div>
     );
