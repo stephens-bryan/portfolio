@@ -1,16 +1,19 @@
+@import '../../configs/colours.scss';
 /* MAIN */
 
 .main-parent-container {
     margin-bottom: 2em;
 }
 
-#main div.in-view {
-    opacity: 0;
-    line-height: 1.5;
-    animation: fadeIn 2s ease both;
-    margin: 1em 0;
-    height: 330px;
-    align-items: center;
+#main{
+    div.in-view {
+        opacity: 0;
+        line-height: 1.5;
+        animation: fadeIn 2s ease both;
+        margin: 1em 0;
+        height: 330px;
+        align-items: center;
+    }
 }
 
 @keyframes fadeIn {
@@ -46,52 +49,52 @@
 .hexagon {
     width: 150px;
     height: 85px;
-    background: #8521B2;
+    background: $purple;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: $white;
     margin: 5em 2em;
     text-align: center;
-}
 
-.hexagon .hexagon-helper-text {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    transform: translateY(70px);
-    z-index: 1000;
-    color: #E8C3F4;
-    font-weight: bold;
-}
+    &:before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-bottom: 40px solid $purple;
+    }
 
-.hexagon img {
-    height: 70px;
-}
+    img{
+        height: 70px;
+    }
 
-.hexagon:before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    border-bottom: 40px solid #8521B2;
-}
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-top: 40px solid $purple;
+    }
 
-.hexagon:after {
-    content: "";
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    border-top: 40px solid #8521B2;
+    .hexagon-helper-text {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(70px);
+        z-index: 1000;
+        color: $purple;
+        font-weight: bold;
+    }
 }
 
 .hexagon-scroll-down {
