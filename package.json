@@ -4,9 +4,9 @@
   "description": "Portfolio site",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "build": "webpack --mode=production",
-    "serve": "node index.js",
-    "start": "node index.js"
+    "serve": "node index.js"
   },
   "keywords": [
     "portfolio",
