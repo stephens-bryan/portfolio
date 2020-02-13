@@ -3,7 +3,7 @@ import './main.scss';
 
 const IntroHero = () => {
 
-    const [height, setHeight] = useState();
+    const [height, setHeight] = useState(window.innerHeight);
 
     useEffect(() => {
         let handleResize = () => {
@@ -17,7 +17,7 @@ const IntroHero = () => {
     const jumpLink = () => (
         window.scrollTo({
             top: window.innerHeight + 100,
-            behaviour: "smooth"
+            behavior: 'smooth'
         })
     );
 
