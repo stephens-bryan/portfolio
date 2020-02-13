@@ -31,9 +31,9 @@ const Header = () => {
             </div>
             <nav>
                 <ul>
-                    <li>
+                    {/* <li>
                         <a href="#">Projects</a>
-                    </li>
+                    </li> */}
                     <li className={setVisibility()}>
                         <a href="mailto:contact@bryanstephens.ca">contact@bryanstephens.ca</a>
                     </li>
