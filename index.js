@@ -6,5 +6,5 @@ const PORT = process.env.PORT || 3001;
 app.use(express.static('build'));
 
 app.listen(PORT, function(){
-    console.log(`app running on port ${port}`);
+    console.log(`app running on port ${PORT}`);
 });
