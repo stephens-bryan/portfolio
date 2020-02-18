@@ -24,7 +24,7 @@ const IntroHero = () => {
     return(
         <section className="intro max-width">
             <div className="intro_hero__title" style={{height: height}}>
-                <p>I’m a Web Developer living in Toronto, Canada. I build web accessbile applications</p>
+                <p>I’m a Web Developer living in Toronto, Canada. I build web accessible applications</p>
                 <p>Have a Question?</p>
                 <p>Reach me at
                     <a href="mailto:contact@bryanstephens.ca"> contact@bryanstephens.ca</a>
