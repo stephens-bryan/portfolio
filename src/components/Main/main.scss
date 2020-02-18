@@ -6,6 +6,7 @@
 }
 
 #main{
+    margin: 50px auto;
     div.in-view {
         opacity: 0;
         line-height: 1.5;
@@ -95,11 +96,32 @@
         color: $purple;
         font-weight: bold;
     }
+
+    @media (max-width: 500px){
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+
+        img{
+            height: 50px;
+        }
+
+        &:before{
+            content: initial;
+        }
+
+        &:after{
+            content: initial;
+        }
+
+        .hexagon-helper-text{
+            transform: translateY(35px);
+        }
+    }
 }
 
 .hexagon-scroll-down {
     text-align: center;
-    /* margin-bottom: 5em; */
 }
 
 @media (max-width: 750px) {
