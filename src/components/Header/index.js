@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './main.scss';
 
 const Header = () => {
-    const [width, setWidth] = useState();
+    const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         let handleResize = () => {
