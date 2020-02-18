@@ -27,7 +27,7 @@ const IntroHero = () => {
                 <p>I’m a Web Developer living in Toronto, Canada. I build web accessbile applications</p>
                 <p>Have a Question?</p>
                 <p>Reach me at
-                    <a href="mailto:contact@bryanstephens.ca"> contact@bryanstphens.ca</a>
+                    <a href="mailto:contact@bryanstephens.ca"> contact@bryanstephens.ca</a>
                 </p>
                 <div>
                     <svg onClick={jumpLink} className="bounce clickable" width="33" height="30" xmlns="http://www.w3.org/2000/svg">
