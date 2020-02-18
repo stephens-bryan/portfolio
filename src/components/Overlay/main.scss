@@ -33,7 +33,7 @@
     right: 0%;
     bottom: 0%;
     top: 0px;
-    transform: translate(50px, 330px);
+    transform: translate(-143px, 270px);
     width: 750px;
     background: $white;
     padding: 2em;
@@ -55,6 +55,12 @@
     
     &.services {
         height: calc(100% - 10em);
+    }
+}
+
+@media (max-width: 1540px){
+    .text-overlay{
+        transform: translate(50px, 330px);
     }
 }
 
