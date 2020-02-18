@@ -3,7 +3,7 @@
 
 .overlay-container {
     display: flex;
-    margin-bottom: 225px !important;
+    margin-bottom: 250px !important;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -33,7 +33,7 @@
     right: 0%;
     bottom: 0%;
     top: 0px;
-    transform: translate(-143px, 270px);
+    transform: translate(50px, 330px);
     width: 750px;
     background: $white;
     padding: 2em;
@@ -62,7 +62,7 @@
     transform: translateY(160px);
 }
 
-@media (max-width: 1540px) {
+@media (max-width: 1240px) {
 
     .overlay-container {
         margin-bottom: 0 !important;
@@ -87,4 +87,14 @@
         margin-bottom: 100px;
     }
 }
+
+// #Services {
+//     // .overlay-container {
+//     //     margin-bottom: 330px !important;
+//     // }
+
+//     // @media (max-width: 500px){
+//     //     margin-bottom: 0 !important;
+//     // }
+// }
 
