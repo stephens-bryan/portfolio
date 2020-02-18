@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build:ui": "webpack --mode=production",
-    "heroku:logs": "heroku logs --tail",
-    "start:dev" : "webpack-dev-server"
+    "heroku:logs": "heroku logs --tail"
   },
   "keywords": [
     "portfolio",
